@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anantha pavani - Full Stack Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="first.css" />
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">AP</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Anantha pavani</h1>
+                <h2>Full Stack Developer (Student)</h2>
+                <p>Crafting digital experiences with cutting-edge technologies and innovative solutions</p>
+                <a href="#projects" class="cta-button">Explore My Portfolio</a>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px">
+                <h2 style="font-family:Orbitron,monospace; margin-left:500px;margin-top:-100px; color:var(--neon-cyan)">
+                    Featured Projects</h2>
+                <p style="margin:0; color:rgba(255,255,255,0.7)">Click a project to expand details</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./onlineshopping1.jpg"
+                            alt="ProGuide">
+                        <div class="project-overlay">
+                            <div>
+                                <div class="project-title">ProGuide</div>
+                                <div class="project-desc">Pro guide is the onlineshopping platform but not the same as
+                                    other platform.
+                                </div>
+                                <div class="project-tools"><span class="tool">HTML<span class="tool">CSS</span></div>
+                                <div class="project-actions">
+                                    <button class="btn ghost" onclick="openGit(event,'https://github.com/Ananthapavani/ProGuide')">GitHub</button>
+                                    <button class="btn primary" onclick="openLive(event,'file:///C:/Users/musin/Downloads/ProGuide-main%20(1)/ProGuide-main/index.html')">Live Demo</button>
+                                    <button class="btn" onclick="toggleExpand(this)">More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-more">
+                        <p style="margin:0 0 8px">🔹 Project Idea:
+ProGuide is a simple, user-friendly website designed to help people—especially elderly users—compare product prices and discounts across different shopping platforms.</br>
+
+🔹 Project Description:
+Many older users find online shopping overwhelming due to cluttered interfaces and too many options. We created ProGuide using only HTML and CSS, focusing on clean design, large text, easy navigation, and clear instructions.
+With ProGuide, users don’t need to open multiple tabs or websites—our interface shows prices and discounts from different platforms in one place, making the process faster, simpler, and less stressful.</br>
+
+🔹 Future Scope:
+Currently, ProGuide is an interface prototype. In the future, we aim to integrate real-time data fetching, smart filters, voice assistance, and accessibility features to make it even more helpful for elderly users.
+.</p>
+                        <small style="color:rgba(255,255,255,0.6)">Responsibilities: the basic frontend</small>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="./study&relax1.jpg"
+                            alt="Learnoha">
+                        <div class="project-overlay">
+                            <div>
+                                <div class="project-title">Learnoha</div>
+                                <div class="project-desc">A realistic project related to the study and relax .
+                                </div>
+                                <div class="project-tools"><span class="tool">HTML</span><span
+                                        class="tool">CSS</span><span class="tool">Javascript</span></div>
+                                <div class="project-actions">
+                                    <button class="btn ghost" onclick="openGit(event,'https://github.com/Ananthapavani/Learnaho')">GitHub</button>
+                                    <button class="btn primary" onclick="openLive(event,'file:///C:/Users/musin/Desktop/iship/IShip1/IShip1/homepage.html')">Live Demo</button>
+                                    <button class="btn" onclick="toggleExpand(this)">More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-more">
+                        <p style="margin:0 0 8px">Learnoha related to study abd relax where we and store our important
+                            file and we cnd add our tasks in to-do-list and
+                            we can add our important certificates to the vault and additional we have bookswap &
+                            portfolio abd coming to relation mood we have funfacts,jokes,music and games.</p>
+                        <small style="color:rgba(255,255,255,0.6)">Responsibility: UI, game engine, state
+                            management</small>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Education Journey</h2>
+                <p class="section-subtitle">My academic path in computer science and technology</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content glass-card">
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>Aditya College of Engineering & Technology</h4>
+                        <p>Computer Science and Engineering.currently
+                            maintaining a 8.14 GPA.</p>
+                    </div>
+                    <div class="timeline-date">2023-2027</div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content glass-card">
+                        <h3>Adity Junior College</h3>
+                        <!-- <h4>CodeCamp Academy</h4> -->
+                        <p>Graduated with honors, focusing on mathematics and computer science . Maintained with 8.80
+                            GPA.</p>
+                    </div>
+                    <div class="timeline-date">2021-2023</div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content glass-card">
+                        <h3>Little Paradise (E.M) Hogh School</h3>
+                        <h4>Central High School</h4>
+                        <p>Graduated with honors, the foundation of our studies.</p>
+                    </div>
+                    <div class="timeline-date">2009-2021</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="glass-card skill-card fade-in">
+                    <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="85"></div>
+                    </div>
+                    <div class="skill-percentage">0%</div>
+                </div>
+
+                <div class="glass-card skill-card fade-in">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">python</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="75"></div>
+                    </div>
+                    <div class="skill-percentage">0%</div>
+                </div>
+
+                <div class="glass-card skill-card fade-in">
+                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                    <div class="skill-name">Html</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="95"></div>
+                    </div>
+                    <div class="skill-percentage">0%</div>
+                </div>
+
+                <div class="glass-card skill-card fade-in">
+                    <div class="skill-icon"><i class="fa-brands fa-css"></i></div>
+                    <div class="skill-name">Css</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="90"></div>
+                    </div>
+                    <div class="skill-percentage">0%</div>
+                </div>
+
+                <div class="glass-card skill-card fade-in">
+                    <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="skill-name">Javascript</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="75"></div>
+                    </div>
+                    <div class="skill-percentage">0%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional achievements and learning milestones</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert1','htmlandcss.jpg')">
+                    <div class="certificate-image"><img src="htmlandcss.jpg"/></div>
+                    <div class="certificate-title">HTML & CSS</div>
+                    <div class="certificate-issuer">IT Specialist</div>
+                    <div class="certificate-date">August 2024</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert2','html.jpg')">
+                    <div class="certificate-image"><img src="html.jpg"/></div>
+                    <div class="certificate-title">Html</div>
+                    <div class="certificate-issuer">Cisco</div>
+                    <div class="certificate-date">July 2025</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert3','css.jpg')">
+                    <div class="certificate-image"><img src="css.jpg"/></div>
+                    <div class="certificate-title">CSS</div>
+                    <div class="certificate-issuer">Cisco</div>
+                    <div class="certificate-date">july 2025</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert4','javascript.jpg')">
+                    <div class="certificate-image"><img src="javascript.jpg"/></div>
+                    <div class="certificate-title">Javascript</div>
+                    <div class="certificate-issuer">Cisco</div>
+                    <div class="certificate-date">August 2025</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert5','nptel.jpg')">
+                    <div class="certificate-image"><img src="nptel.jpg"/></div>
+                    <div class="certificate-title">Internet to Things</div>
+                    <div class="certificate-issuer">Nptel</div>
+                    <div class="certificate-date">November 2024</div>
+                </div>
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert6','greek.jpg')">
+                    <div class="certificate-image"><img src="greek.jpg"/></div>
+                    <div class="certificate-title">Data Structure and Algorithm</div>
+                    <div class="certificate-issuer">GreeksforGreeks</div>
+                    <div class="certificate-date">January 2024</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert7','oracel.png')">
+                    <div class="certificate-image"><img src="oracel.png"/></div>
+                    <div class="certificate-title">Java Fundamentals</div>
+                    <div class="certificate-issuer">Oracel</div>
+                    <div class="certificate-date">October 2024</div>
+                </div>
+
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert8','edx.png')">
+                    <div class="certificate-image"><img src="edx.png"/></div>
+                    <div class="certificate-title">Computer Science 101</div>
+                    <div class="certificate-issuer">EDX</div>
+                    <div class="certificate-date">September 2023</div>
+                </div>
+                <div class="glass-card certificate-card fade-in" onclick="openModal('cert9','cpp.png')">
+                    <div class="certificate-image"><img src="cpp.png"/></div>
+                    <div class="certificate-title">C Programming</div>
+                    <div class="certificate-issuer">C++ Institute</div>
+                    <div class="certificate-date">March 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download my complete professional resume</p>
+            </div>
+            <div class="resume-section fade-in">
+                <a href="./resume(!).pdf" class="download-btn" onclick="downloadResume()">
+                    📄 Download Resume
+                </a>
+                <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.7);">
+                    Last updated: September 2025
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="glass-card fade-in" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div style="font-size: 5rem; margin-bottom: 2rem;" class="image"><img src="me.png"/></div>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                    I'm Anantha Pavani Musini, now currently pursuring in B.tech 3 rd year in Aditya college of Engineering and Technology
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.8);">
+                    A passionate full-stack developer and computer science student with a love for
+                    creating
+                    innovative digital solutions. My journey in technology started in Engineering, and since then, I've
+                    been
+                    constantly learning and exploring new technologies.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: var(--accent-glow);">
+                    My goal is to become a leading full-stack developer and eventually start my own tech company focused
+                    on
+                    sustainable and accessible technology solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate and build something amazing together</p>
+            </div>
+            <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Tell me about your project or just say hi!"
+                        required></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="cta-button">Send Message</button>
+                </div>
+            </form>
+
+            <div class="social-links fade-in">
+                <a href="https://www.linkedin.com/in/anantha-pavani-musini-76552b302/" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Ananthapavani" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:alex@example.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://twitter.com/Ananthapavani" class="social-link" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="first.js"></script>
+
+</body>
+
+</html>
